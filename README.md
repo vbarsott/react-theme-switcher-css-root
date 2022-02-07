@@ -1,5 +1,9 @@
 # React Theme Switcher CSS Root
 
+## Link to the project
+
+https://vbarsott.github.io/react-theme-switcher-css-root/
+
 ## Package starter
 
 - Install react: `npx create-react-app project-name`
