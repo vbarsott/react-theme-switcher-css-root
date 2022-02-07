@@ -19,10 +19,6 @@ const ThemeClasses = ({ themes, themeSelected }) => {
       </section>
 
       <section className='py2 bdBottom'>
-        <Borders />
-      </section>
-
-      <section className='py2 bdBottom'>
         <FontFamilies theme={theme} />
       </section>
 
@@ -44,6 +40,10 @@ const ThemeClasses = ({ themes, themeSelected }) => {
 
       <section className='py2 bdBottom'>
         <Spacing />
+      </section>
+
+      <section className='py2 bdBottom'>
+        <Borders />
       </section>
 
       <section className='py2 bdBottom'>
