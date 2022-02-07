@@ -1,0 +1,19 @@
+// =============================================
+/* Cards */
+// =============================================
+.card {
+  padding: var(--spacer2);
+  border: var(--bdDef);
+  box-shadow: var(--bsDefault);
+  border-radius: var(--br5px);
+}
+.cardTitle {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: var(--fwBold);
+}
+.cardBody {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: var(--fwNormal);
+}

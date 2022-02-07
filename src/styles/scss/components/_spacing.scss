@@ -1,0 +1,482 @@
+// =============================================
+/* Spacing */
+// =============================================
+.mAuto {
+  margin: 0 auto;
+}
+$theme-spacing: (
+  'px': (
+    'prefix': 'px',
+    'values': (
+      '0': var(--spacer0),
+      '1': var(--spacer1),
+      '2': var(--spacer2),
+      '3': var(--spacer3),
+      '4': var(--spacer4),
+      '5': var(--spacer5),
+      '6': var(--spacer6),
+    ),
+  ),
+  'py': (
+    'prefix': 'py',
+    'values': (
+      '0': var(--spacer0),
+      '1': var(--spacer1),
+      '2': var(--spacer2),
+      '3': var(--spacer3),
+      '4': var(--spacer4),
+      '5': var(--spacer5),
+      '6': var(--spacer6),
+    ),
+  ),
+  'padding': (
+    'prefix': 'p',
+    'values': (
+      '0': var(--spacer0),
+      '1': var(--spacer1),
+      '2': var(--spacer2),
+      '3': var(--spacer3),
+      '4': var(--spacer4),
+      '5': var(--spacer5),
+      '6': var(--spacer6),
+    ),
+  ),
+  'padding-left': (
+    'prefix': 'pl',
+    'values': (
+      '0': var(--spacer0),
+      '1': var(--spacer1),
+      '2': var(--spacer2),
+      '3': var(--spacer3),
+      '4': var(--spacer4),
+      '5': var(--spacer5),
+      '6': var(--spacer6),
+    ),
+  ),
+  'padding-right': (
+    'prefix': 'pr',
+    'values': (
+      '0': var(--spacer0),
+      '1': var(--spacer1),
+      '2': var(--spacer2),
+      '3': var(--spacer3),
+      '4': var(--spacer4),
+      '5': var(--spacer5),
+      '6': var(--spacer6),
+    ),
+  ),
+  'padding-top': (
+    'prefix': 'pt',
+    'values': (
+      '0': var(--spacer0),
+      '1': var(--spacer1),
+      '2': var(--spacer2),
+      '3': var(--spacer3),
+      '4': var(--spacer4),
+      '5': var(--spacer5),
+      '6': var(--spacer6),
+    ),
+  ),
+  'padding-bottom': (
+    'prefix': 'pb',
+    'values': (
+      '0': var(--spacer0),
+      '1': var(--spacer1),
+      '2': var(--spacer2),
+      '3': var(--spacer3),
+      '4': var(--spacer4),
+      '5': var(--spacer5),
+      '6': var(--spacer6),
+    ),
+  ),
+  'mx': (
+    'prefix': 'mx',
+    'values': (
+      '0': var(--spacer0),
+      '1': var(--spacer1),
+      '2': var(--spacer2),
+      '3': var(--spacer3),
+      '4': var(--spacer4),
+      '5': var(--spacer5),
+      '6': var(--spacer6),
+    ),
+  ),
+  'my': (
+    'prefix': 'my',
+    'values': (
+      '0': var(--spacer0),
+      '1': var(--spacer1),
+      '2': var(--spacer2),
+      '3': var(--spacer3),
+      '4': var(--spacer4),
+      '5': var(--spacer5),
+      '6': var(--spacer6),
+    ),
+  ),
+  'margin': (
+    'prefix': 'm',
+    'values': (
+      '0': var(--spacer0),
+      '1': var(--spacer1),
+      '2': var(--spacer2),
+      '3': var(--spacer3),
+      '4': var(--spacer4),
+      '5': var(--spacer5),
+      '6': var(--spacer6),
+    ),
+  ),
+  'margin-left': (
+    'prefix': 'ml',
+    'values': (
+      '0': var(--spacer0),
+      '1': var(--spacer1),
+      '2': var(--spacer2),
+      '3': var(--spacer3),
+      '4': var(--spacer4),
+      '5': var(--spacer5),
+      '6': var(--spacer6),
+      'N1': (
+        var(--negSpacer1),
+      ),
+      'N2': (
+        var(--negSpacer2),
+      ),
+      'N3': (
+        var(--negSpacer3),
+      ),
+      'N4': (
+        var(--negSpacer4),
+      ),
+      'N5': (
+        var(--negSpacer5),
+      ),
+      'N6': (
+        var(--negSpacer6),
+      ),
+    ),
+  ),
+  'margin-right': (
+    'prefix': 'mr',
+    'values': (
+      '0': var(--spacer0),
+      '1': var(--spacer1),
+      '2': var(--spacer2),
+      '3': var(--spacer3),
+      '4': var(--spacer4),
+      '5': var(--spacer5),
+      '6': var(--spacer6),
+      'N1': (
+        var(--negSpacer1),
+      ),
+      'N2': (
+        var(--negSpacer2),
+      ),
+      'N3': (
+        var(--negSpacer3),
+      ),
+      'N4': (
+        var(--negSpacer4),
+      ),
+      'N5': (
+        var(--negSpacer5),
+      ),
+      'N6': (
+        var(--negSpacer6),
+      ),
+    ),
+  ),
+  'margin-top': (
+    'prefix': 'mt',
+    'values': (
+      '0': var(--spacer0),
+      '1': var(--spacer1),
+      '2': var(--spacer2),
+      '3': var(--spacer3),
+      '4': var(--spacer4),
+      '5': var(--spacer5),
+      '6': var(--spacer6),
+      'N1': (
+        var(--negSpacer1),
+      ),
+      'N2': (
+        var(--negSpacer2),
+      ),
+      'N3': (
+        var(--negSpacer3),
+      ),
+      'N4': (
+        var(--negSpacer4),
+      ),
+      'N5': (
+        var(--negSpacer5),
+      ),
+      'N6': (
+        var(--negSpacer6),
+      ),
+    ),
+  ),
+  'margin-bottom': (
+    'prefix': 'mb',
+    'values': (
+      '0': var(--spacer0),
+      '1': var(--spacer1),
+      '2': var(--spacer2),
+      '3': var(--spacer3),
+      '4': var(--spacer4),
+      '5': var(--spacer5),
+      '6': var(--spacer6),
+      'N1': (
+        var(--negSpacer1),
+      ),
+      'N2': (
+        var(--negSpacer2),
+      ),
+      'N3': (
+        var(--negSpacer3),
+      ),
+      'N4': (
+        var(--negSpacer4),
+      ),
+      'N5': (
+        var(--negSpacer5),
+      ),
+      'N6': (
+        var(--negSpacer6),
+      ),
+    ),
+  ),
+);
+@each $key, $value in $theme-spacing {
+  $prefix: map-get($value, 'prefix');
+  $values: map-get($value, 'values');
+  @each $k, $v in $values {
+    @if ($key == 'px') {
+      .#{$prefix}#{$k} {
+        padding-left: $v;
+        padding-right: $v;
+      }
+    } @else if ($key == 'py') {
+      .#{$prefix}#{$k} {
+        padding-top: $v;
+        padding-bottom: $v;
+      }
+    } @else if ($key == 'mx') {
+      .#{$prefix}#{$k} {
+        margin-left: $v;
+        margin-right: $v;
+      }
+    } @else if ($key == 'my') {
+      .#{$prefix}#{$k} {
+        margin-top: $v;
+        margin-bottom: $v;
+      }
+    } @else {
+      .#{$prefix}#{$k} {
+        #{$key}: $v;
+      }
+    }
+  }
+  @include xxs {
+    @each $k, $v in $values {
+      @if ($key == 'px') {
+        .#{$prefix}#{$k}-xxs {
+          padding-left: $v;
+          padding-right: $v;
+        }
+      } @else if ($key == 'py') {
+        .#{$prefix}#{$k}-xxs {
+          padding-top: $v;
+          padding-bottom: $v;
+        }
+      } @else if ($key == 'mx') {
+        .#{$prefix}#{$k}-xxs {
+          margin-left: $v;
+          margin-right: $v;
+        }
+      } @else if ($key == 'my') {
+        .#{$prefix}#{$k}-xxs {
+          margin-top: $v;
+          margin-bottom: $v;
+        }
+      } @else {
+        .#{$prefix}#{$k}-xxs {
+          #{$key}: $v;
+        }
+      }
+    }
+  }
+  @include xs {
+    @each $k, $v in $values {
+      @if ($key == 'px') {
+        .#{$prefix}#{$k}-xs {
+          padding-left: $v;
+          padding-right: $v;
+        }
+      } @else if ($key == 'py') {
+        .#{$prefix}#{$k}-xs {
+          padding-top: $v;
+          padding-bottom: $v;
+        }
+      } @else if ($key == 'mx') {
+        .#{$prefix}#{$k}-xs {
+          margin-left: $v;
+          margin-right: $v;
+        }
+      } @else if ($key == 'my') {
+        .#{$prefix}#{$k}-xs {
+          margin-top: $v;
+          margin-bottom: $v;
+        }
+      } @else {
+        .#{$prefix}#{$k}-xs {
+          #{$key}: $v;
+        }
+      }
+    }
+  }
+  @include sm {
+    @each $k, $v in $values {
+      @if ($key == 'px') {
+        .#{$prefix}#{$k}-sm {
+          padding-left: $v;
+          padding-right: $v;
+        }
+      } @else if ($key == 'py') {
+        .#{$prefix}#{$k}-sm {
+          padding-top: $v;
+          padding-bottom: $v;
+        }
+      } @else if ($key == 'mx') {
+        .#{$prefix}#{$k}-sm {
+          margin-left: $v;
+          margin-right: $v;
+        }
+      } @else if ($key == 'my') {
+        .#{$prefix}#{$k}-sm {
+          margin-top: $v;
+          margin-bottom: $v;
+        }
+      } @else {
+        .#{$prefix}#{$k}-sm {
+          #{$key}: $v;
+        }
+      }
+    }
+  }
+  @include md {
+    @each $k, $v in $values {
+      @if ($key == 'px') {
+        .#{$prefix}#{$k}-md {
+          padding-left: $v;
+          padding-right: $v;
+        }
+      } @else if ($key == 'py') {
+        .#{$prefix}#{$k}-md {
+          padding-top: $v;
+          padding-bottom: $v;
+        }
+      } @else if ($key == 'mx') {
+        .#{$prefix}#{$k}-md {
+          margin-left: $v;
+          margin-right: $v;
+        }
+      } @else if ($key == 'my') {
+        .#{$prefix}#{$k}-md {
+          margin-top: $v;
+          margin-bottom: $v;
+        }
+      } @else {
+        .#{$prefix}#{$k}-md {
+          #{$key}: $v;
+        }
+      }
+    }
+  }
+  @include lg {
+    @each $k, $v in $values {
+      @if ($key == 'px') {
+        .#{$prefix}#{$k}-lg {
+          padding-left: $v;
+          padding-right: $v;
+        }
+      } @else if ($key == 'py') {
+        .#{$prefix}#{$k}-lg {
+          padding-top: $v;
+          padding-bottom: $v;
+        }
+      } @else if ($key == 'mx') {
+        .#{$prefix}#{$k}-lg {
+          margin-left: $v;
+          margin-right: $v;
+        }
+      } @else if ($key == 'my') {
+        .#{$prefix}#{$k}-lg {
+          margin-top: $v;
+          margin-bottom: $v;
+        }
+      } @else {
+        .#{$prefix}#{$k}-lg {
+          #{$key}: $v;
+        }
+      }
+    }
+  }
+  @include xl {
+    @each $k, $v in $values {
+      @if ($key == 'px') {
+        .#{$prefix}#{$k}-xl {
+          padding-left: $v;
+          padding-right: $v;
+        }
+      } @else if ($key == 'py') {
+        .#{$prefix}#{$k}-xl {
+          padding-top: $v;
+          padding-bottom: $v;
+        }
+      } @else if ($key == 'mx') {
+        .#{$prefix}#{$k}-xl {
+          margin-left: $v;
+          margin-right: $v;
+        }
+      } @else if ($key == 'my') {
+        .#{$prefix}#{$k}-xl {
+          margin-top: $v;
+          margin-bottom: $v;
+        }
+      } @else {
+        .#{$prefix}#{$k}-xl {
+          #{$key}: $v;
+        }
+      }
+    }
+  }
+  @include xxl {
+    @each $k, $v in $values {
+      @if ($key == 'px') {
+        .#{$prefix}#{$k}-xxl {
+          padding-left: $v;
+          padding-right: $v;
+        }
+      } @else if ($key == 'py') {
+        .#{$prefix}#{$k}-xxl {
+          padding-top: $v;
+          padding-bottom: $v;
+        }
+      } @else if ($key == 'mx') {
+        .#{$prefix}#{$k}-xxl {
+          margin-left: $v;
+          margin-right: $v;
+        }
+      } @else if ($key == 'my') {
+        .#{$prefix}#{$k}-xxl {
+          margin-top: $v;
+          margin-bottom: $v;
+        }
+      } @else {
+        .#{$prefix}#{$k}-xxl {
+          #{$key}: $v;
+        }
+      }
+    }
+  }
+}

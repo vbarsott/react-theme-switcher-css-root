@@ -1,0 +1,140 @@
+// =============================================
+/* Display */
+// =============================================
+$theme-display: (
+  'display': (
+    'prefix': 'display',
+    'values': (
+      'None': none,
+      'Inline': inline,
+      'InlineBlock': inline-block,
+      'Block': block,
+      'Grid': grid,
+      'Flex': flex,
+      'InlineFlex': inline-flex,
+    ),
+  ),
+  'flex-direction': (
+    'prefix': 'flex',
+    'values': (
+      'Row': row,
+      'RowReverse': row-reverse,
+      'Column': column,
+      'ColumnReverse': column-reverse,
+    ),
+  ),
+  'justify-content': (
+    'prefix': 'justify',
+    'values': (
+      'Center': center,
+      'Start': flex-start,
+      'End': flex-end,
+      'Between': space-between,
+      'Around': space-around,
+      'Evenly': space-evenly,
+    ),
+  ),
+  'align-items': (
+    'prefix': 'align',
+    'values': (
+      'Start': flex-start,
+      'End': flex-end,
+      'Center': center,
+      'Baseline': baseline,
+      'Stretch': stretch,
+    ),
+  ),
+  'align-content': (
+    'prefix': 'alignContent',
+    'values': (
+      'Center': center,
+      'Start': flex-start,
+      'End': flex-end,
+      'Between': space-between,
+      'Around': space-around,
+      'Stretch': stretch,
+    ),
+  ),
+  'align-self': (
+    'prefix': 'alignSelf',
+    'values': (
+      'Auto': auto,
+      'Start': flex-start,
+      'End': flex-end,
+      'Center': center,
+      'Baseline': baseline,
+      'Stretch': stretch,
+    ),
+  ),
+  'order': (
+    'prefix': 'order',
+    'values': (
+      'first': -1,
+      '0': 0,
+      '1': 1,
+      '2': 2,
+      '3': 3,
+      '4': 4,
+      '5': 5,
+      'last': 6,
+    ),
+  ),
+);
+@each $key, $value in $theme-display {
+  $prefix: map-get($value, 'prefix');
+  $values: map-get($value, 'values');
+  @each $k, $v in $values {
+    .#{$prefix}#{$k} {
+      #{$key}: $v;
+    }
+  }
+  @include xxs {
+    @each $k, $v in $values {
+      .#{$prefix}#{$k}-xxs {
+        #{$key}: $v;
+      }
+    }
+  }
+  @include xs {
+    @each $k, $v in $values {
+      .#{$prefix}#{$k}-xs {
+        #{$key}: $v;
+      }
+    }
+  }
+  @include sm {
+    @each $k, $v in $values {
+      .#{$prefix}#{$k}-sm {
+        #{$key}: $v;
+      }
+    }
+  }
+  @include md {
+    @each $k, $v in $values {
+      .#{$prefix}#{$k}-md {
+        #{$key}: $v;
+      }
+    }
+  }
+  @include lg {
+    @each $k, $v in $values {
+      .#{$prefix}#{$k}-lg {
+        #{$key}: $v;
+      }
+    }
+  }
+  @include xl {
+    @each $k, $v in $values {
+      .#{$prefix}#{$k}-xl {
+        #{$key}: $v;
+      }
+    }
+  }
+  @include xxl {
+    @each $k, $v in $values {
+      .#{$prefix}#{$k}-xxl {
+        #{$key}: $v;
+      }
+    }
+  }
+}

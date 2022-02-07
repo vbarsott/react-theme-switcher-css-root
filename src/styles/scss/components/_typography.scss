@@ -1,0 +1,225 @@
+// =============================================
+/* Font-family */
+// =============================================
+$theme-ff: (
+  'ffDef': var(--ffDef),
+  'ffStyled': var(--ffStyled),
+  'ffAccent': var(--ffAccent),
+);
+@each $key, $val in $theme-ff {
+  .#{$key} {
+    font-family: $val;
+  }
+}
+
+// =============================================
+/* Font-size */
+// =============================================
+$theme-fs: (
+  'general-font': (
+    'values': (
+      'fsDef': var(--fsDef),
+      'fsXS': var(--fsXS),
+      'fsSM': var(--fsSM),
+      'fsMD': var(--fsMD),
+      'fsLG': var(--fsLG),
+      'fsXL': var(--fsXL),
+      'fsXXL': var(--fsXXL),
+    ),
+  ),
+  'small-size': (
+    'values': (
+      'fsH1': var(--fsH1sm),
+      'fsH2': var(--fsH2sm),
+      'fsH3': var(--fsH3sm),
+      'fsH4': var(--fsH4sm),
+      'fsH5': var(--fsH5sm),
+      'fsH6': var(--fsH6sm),
+    ),
+  ),
+  'normal-size': (
+    'values': (
+      'fsH1': var(--fsH1),
+      'fsH2': var(--fsH2),
+      'fsH3': var(--fsH3),
+      'fsH4': var(--fsH4),
+      'fsH5': var(--fsH5),
+      'fsH6': var(--fsH6),
+    ),
+  ),
+  'large-size': (
+    'values': (
+      'fsH1': var(--fsH1lg),
+      'fsH2': var(--fsH2lg),
+      'fsH3': var(--fsH3lg),
+      'fsH4': var(--fsH4lg),
+      'fsH5': var(--fsH5lg),
+      'fsH6': var(--fsH6lg),
+    ),
+  ),
+);
+@each $key, $value in $theme-fs {
+  $values: map-get($value, 'values');
+  @each $k, $v in $values {
+    @if ($key == 'general-font') {
+      .#{$k} {
+        font-size: $v;
+      }
+    }
+    @if ($key == 'small-size') {
+      @include xxs {
+        .#{$k} {
+          font-size: $v;
+        }
+      }
+      @include xs {
+        .#{$k} {
+          font-size: $v;
+        }
+      }
+    }
+    @if ($key == 'normal-size') {
+      @include sm {
+        .#{$k} {
+          font-size: $v;
+        }
+      }
+      @include md {
+        .#{$k} {
+          font-size: $v;
+        }
+      }
+    }
+    @if ($key == 'large-size') {
+      @include lg {
+        .#{$k} {
+          font-size: $v;
+        }
+      }
+      @include xl {
+        .#{$k} {
+          font-size: $v;
+        }
+      }
+      @include xxl {
+        .#{$k} {
+          font-size: $v;
+        }
+      }
+    }
+  }
+}
+
+// =============================================
+/* Font-weight */
+// =============================================
+$theme-fw: (
+  'fwThin': var(--fwThin),
+  'fwExtralight': var(--fwExtralight),
+  'fwLight': var(--fwLight),
+  'fwNormal': var(--fwNormal),
+  'fwMedium': var(--fwMedium),
+  'fwSemibold': var(--fwSemibold),
+  'fwBold': var(--fwBold),
+  'fwExtrabold': var(--fwExtrabold),
+  'fwHeavy': var(--fwHeavy),
+);
+@each $key, $value in $theme-fw {
+  .#{$key} {
+    font-weight: $value;
+  }
+}
+
+// =============================================
+/* Letter-spacing */
+// =============================================
+$theme-ls: (
+  'lsSM': var(--lsSM),
+  'lsMD': var(--lsMD),
+  'lsLG': var(--lsLG),
+);
+@each $key, $value in $theme-ls {
+  .#{$key} {
+    letter-spacing: $value;
+  }
+}
+
+// =============================================
+/* Line-heigth */
+// =============================================
+$theme-lh: (
+  'lhDef': var(--lhDef),
+  'lh1': var(--lh1),
+  'lh2': var(--lh2),
+  'lh3': var(--lh3),
+  'lh4': var(--lh4),
+  'lh5': var(--lh5),
+);
+@each $key, $value in $theme-lh {
+  .#{$key} {
+    line-height: $value;
+  }
+}
+
+// =============================================
+/* Text-align */
+// =============================================
+$theme-text-align: (
+  'textCenter': center,
+  'textRight': right,
+  'textLeft': left,
+);
+@each $key, $value in $theme-text-align {
+  .#{$key} {
+    text-align: $value;
+  }
+}
+@include xxs {
+  @each $key, $value in $theme-text-align {
+    .#{$key}-xxs {
+      text-align: $value;
+    }
+  }
+}
+@include xs {
+  @each $key, $value in $theme-text-align {
+    .#{$key}-xs {
+      text-align: $value;
+    }
+  }
+}
+@include sm {
+  @each $key, $value in $theme-text-align {
+    .#{$key}-sm {
+      text-align: $value;
+    }
+  }
+}
+@include md {
+  @each $key, $value in $theme-text-align {
+    .#{$key}-md {
+      text-align: $value;
+    }
+  }
+}
+@include lg {
+  @each $key, $value in $theme-text-align {
+    .#{$key}-lg {
+      text-align: $value;
+    }
+  }
+}
+@include xl {
+  @each $key, $value in $theme-text-align {
+    .#{$key}-xl {
+      text-align: $value;
+    }
+  }
+}
+@include xxl {
+  @each $key, $value in $theme-text-align {
+    .#{$key}-xxl {
+      text-align: $value;
+    }
+  }
+}

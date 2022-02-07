@@ -1,0 +1,216 @@
+// =============================================
+/* Grid columns */
+// =============================================
+@for $i from 1 through $gridColumns {
+  .col#{$i} {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: math.div($i * 100%, $gridColumns);
+  }
+}
+@include xxs {
+  @for $i from 1 through $gridColumns {
+    .col#{$i}-xxs {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $gridColumns);
+    }
+  }
+}
+@include xs {
+  @for $i from 1 through $gridColumns {
+    .col#{$i}-xs {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $gridColumns);
+    }
+  }
+}
+@include sm {
+  @for $i from 1 through $gridColumns {
+    .col#{$i}-sm {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $gridColumns);
+    }
+  }
+}
+@include md {
+  @for $i from 1 through $gridColumns {
+    .col#{$i}-md {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $gridColumns);
+    }
+  }
+}
+@include lg {
+  @for $i from 1 through $gridColumns {
+    .col#{$i}-lg {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $gridColumns);
+    }
+  }
+}
+@include xl {
+  @for $i from 1 through $gridColumns {
+    .col#{$i}-xl {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $gridColumns);
+    }
+  }
+}
+@include xxl {
+  @for $i from 1 through $gridColumns {
+    .col#{$i}-xxl {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $gridColumns);
+    }
+  }
+}
+
+// =============================================
+/* Containers and gaps */
+// =============================================
+$grid-gaps: (
+  'pos': (
+    'prefix': 'positive',
+    'values': (
+      'SM': var(--gapSM),
+      'MD': var(--gapMD),
+      'LG': var(--gapLG),
+    ),
+  ),
+  'neg': (
+    'prefix': 'negative',
+    'values': (
+      'SM': var(--negGapSM),
+      'MD': var(--negGapMD),
+      'LG': var(--negGapLG),
+    ),
+  ),
+);
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+@mixin containerFluid() {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@mixin container() {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: var(--bpLG);
+}
+@each $key, $value in $grid-gaps {
+  $prefix: map-get($value, 'prefix');
+  $values: map-get($value, 'values');
+  @each $k, $v in $values {
+    @if ($prefix == 'positive') {
+      .containerFluid#{$k} {
+        @include containerFluid();
+        padding: 0 $v;
+      }
+      .container#{$k} {
+        @include container();
+        padding: 0 $v;
+      }
+      .gap#{$k} > * {
+        padding: $v;
+      }
+    }
+    @if ($prefix == 'negative') {
+      .gap#{$k} {
+        margin-left: $v;
+        margin-right: $v;
+      }
+    }
+  }
+}
+@include sm {
+  @each $key, $value in $grid-gaps {
+    $prefix: map-get($value, 'prefix');
+    $values: map-get($value, 'values');
+    @each $k, $v in $values {
+      @if ($prefix == 'positive') {
+        .containerFluid#{$k}-sm {
+          @include containerFluid();
+          padding: 0 $v;
+        }
+        .container#{$k}-sm {
+          @include container();
+          padding: 0 $v;
+        }
+        .gap#{$k}-sm > * {
+          padding: $v;
+        }
+      }
+      @if ($prefix == 'negative') {
+        .gap#{$k}-sm {
+          margin-left: $v;
+          margin-right: $v;
+        }
+      }
+    }
+  }
+}
+@include md {
+  @each $key, $value in $grid-gaps {
+    $prefix: map-get($value, 'prefix');
+    $values: map-get($value, 'values');
+    @each $k, $v in $values {
+      @if ($prefix == 'positive') {
+        .containerFluid#{$k}-md {
+          @include containerFluid();
+          padding: 0 $v;
+        }
+        .container#{$k}-md {
+          @include container();
+          padding: 0 $v;
+        }
+        .gap#{$k}-md > * {
+          padding: $v;
+        }
+      }
+      @if ($prefix == 'negative') {
+        .gap#{$k}-md {
+          margin-left: $v;
+          margin-right: $v;
+        }
+      }
+    }
+  }
+}
+@include lg {
+  @each $key, $value in $grid-gaps {
+    $prefix: map-get($value, 'prefix');
+    $values: map-get($value, 'values');
+    @each $k, $v in $values {
+      @if ($prefix == 'positive') {
+        .containerFluid#{$k}-lg {
+          @include containerFluid();
+          padding: 0 $v;
+        }
+        .container#{$k}-lg {
+          @include container();
+          padding: 0 $v;
+        }
+        .gap#{$k}-lg > * {
+          padding: $v;
+        }
+      }
+      @if ($prefix == 'negative') {
+        .gap#{$k}-lg {
+          margin-left: $v;
+          margin-right: $v;
+        }
+      }
+    }
+  }
+}

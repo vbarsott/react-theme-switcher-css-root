@@ -1,0 +1,358 @@
+// =============================================
+// Bootstrap colors
+// =============================================
+
+// grays
+$bs-gray-100: #f8f9fa;
+$bs-gray-200: #e9ecef;
+$bs-gray-300: #dee2e6;
+$bs-gray-400: #ced4da;
+$bs-gray-500: #adb5bd;
+$bs-gray-600: #6c757d;
+$bs-gray-700: #495057;
+$bs-gray-800: #343a40;
+$bs-gray-900: #212529;
+
+$grays: (
+  'bs-gray-100': $bs-gray-100,
+  'bs-gray-200': $bs-gray-200,
+  'bs-gray-300': $bs-gray-300,
+  'bs-gray-400': $bs-gray-400,
+  'bs-gray-500': $bs-gray-500,
+  'bs-gray-600': $bs-gray-600,
+  'bs-gray-700': $bs-gray-700,
+  'bs-gray-800': $bs-gray-800,
+  'bs-gray-900': $bs-gray-900,
+);
+
+// standard colors
+$bs-blue: #0d6efd;
+$bs-indigo: #6610f2;
+$bs-purple: #6f42c1;
+$bs-pink: #d63384;
+$bs-red: #dc3545;
+$bs-orange: #fd7e14;
+$bs-yellow: #ffc107;
+$bs-green: #198754;
+$bs-teal: #20c997;
+$bs-cyan: #0dcaf0;
+
+$standard-colors: (
+  'bs-blue': $bs-blue,
+  'bs-indigo': $bs-indigo,
+  'bs-purple': $bs-purple,
+  'bs-pink': $bs-pink,
+  'bs-red': $bs-red,
+  'bs-orange': $bs-orange,
+  'bs-yellow': $bs-yellow,
+  'bs-green': $bs-green,
+  'bs-teal': $bs-teal,
+  'bs-cyan': $bs-cyan,
+);
+
+// =============================================
+// HTML Colors by groups
+// =============================================
+
+// Light colors
+$aliceblue: aliceblue;
+$antiquewhite: antiquewhite;
+$azure: azure;
+$beige: beige;
+$bisque: bisque;
+$blanchedalmond: blanchedalmond;
+$cornsilk: cornsilk;
+$floralwhite: floralwhite; // #fffaf0
+$ghostwhite: ghostwhite;
+$honeydew: honeydew;
+$ivory: ivory;
+$lavender: lavender;
+$lavenderblush: lavenderblush;
+$lightyellow: lightyellow;
+$linen: linen;
+$mintcream: mintcream;
+$mistyrose: mistyrose;
+$oldlace: oldlace;
+$seashell: seashell;
+$snow: snow;
+$white: white;
+$whitesmoke: whitesmoke;
+
+// Dark colors
+$black: black;
+$darkblue: darkblue;
+$darkgreen: darkgreen;
+$darkmagenta: darkmagenta;
+$darkolivegreen: darkolivegreen;
+$darkred: darkred;
+$darkslateblue: darkslateblue;
+$darkslategray: darkslategray;
+$indigo: indigo;
+$maroon: maroon;
+$mediumblue: mediumblue;
+$midnightblue: midnightblue;
+$navy: navy;
+$rebeccapurple: rebeccapurple;
+
+// Blue
+$aqua: aqua;
+$aquamarine: aquamarine;
+$blue: blue;
+$cornflowerblue: cornflowerblue;
+$cyan: cyan;
+$darkturquoise: darkturquoise;
+$deepskyblue: deepskyblue;
+$dodgerblue: dodgerblue; // #1e90ff
+$lightblue: lightblue;
+$lightcyan: lightcyan;
+$lightskyblue: lightskyblue;
+$lightsteelblue: lightsteelblue;
+$paleturquoise: paleturquoise;
+$powderblue: powderblue;
+$royalblue: royalblue; // #4169e1
+$skyblue: skyblue;
+$steelblue: steelblue; // #4682b4
+$turquoise: turquoise;
+$cyanblue: #0070f3;
+
+// Green
+$cadetblue: cadetblue;
+$chartreuse: chartreuse;
+$darkcyan: darkcyan;
+$darkkhaki: darkkhaki;
+$darkseagreen: darkseagreen;
+$forestgreen: forestgreen;
+$green: green;
+$greenyellow: greenyellow;
+$lawngreen: lawngreen;
+$lightgreen: lightgreen;
+$lightseagreen: lightseagreen;
+$lime: lime;
+$limegreen: limegreen;
+$mediumaquamarine: mediumaquamarine;
+$mediumseagreen: mediumseagreen;
+$mediumspringgreen: mediumspringgreen;
+$mediumturquoise: mediumturquoise;
+$olive: olive;
+$olivedrab: olivedrab;
+$palegreen: palegreen;
+$seagreen: seagreen;
+$springgreen: springgreen;
+$teal: teal; // #008080
+$yellowgreen: yellowgreen;
+
+// Red
+$brown: brown;
+$chocolate: chocolate;
+$coral: coral;
+$crimson: crimson;
+$darkgoldenrod: darkgoldenrod;
+$darkorange: darkorange;
+$darksalmon: darksalmon;
+$firebrick: firebrick;
+$indianred: indianred;
+$lightcoral: lightcoral;
+$lightsalmon: lightsalmon;
+$orangered: orangered; // #ff4500
+$peru: peru;
+$sienna: sienna;
+$red: red;
+$rosybrown: rosybrown;
+$saddlebrown: saddlebrown;
+$salmon: salmon;
+$sandybrown: sandybrown;
+$tomato: tomato;
+
+// Purple and Pink
+$blueviolet: blueviolet;
+$darkorchid: darkorchid;
+$darkviolet: darkviolet;
+$deeppink: deeppink;
+$fuchsia: fuchsia;
+$hotpink: hotpink;
+$lightpink: lightpink;
+$magenta: magenta;
+$mediumorchid: mediumorchid;
+$mediumpurple: mediumpurple;
+$mediumslateblue: mediumslateblue;
+$mediumvioletred: mediumvioletred;
+$orchid: orchid;
+$palevioletred: palevioletred;
+$pink: pink;
+$plum: plum;
+$purple: purple;
+$slateblue: slateblue;
+$thistle: thistle;
+$violet: violet;
+
+// Gray
+$darkgray: darkgray;
+$dimgray: dimgray; // #696969
+$gainsboro: gainsboro; // #dcdcdc
+$gray: gray;
+$lightgray: lightgray;
+$lightslategray: lightslategray;
+$silver: silver;
+$slategray: slategray;
+
+// Yellow
+$burlywood: burlywood;
+$gold: gold;
+$goldenrod: goldenrod;
+$khaki: khaki;
+$lemonchiffon: lemonchiffon;
+$lightgoldenrodyellow: lightgoldenrodyellow;
+$moccasin: moccasin;
+$navajowhite: navajowhite;
+$orange: orange;
+$palegoldenrod: palegoldenrod;
+$papayawhip: papayawhip;
+$peachpuff: peachpuff;
+$tan: tan;
+$wheat: wheat;
+$yellow: yellow;
+
+// =============================================
+// HTML Colors by names
+// =============================================
+$aliceblue: aliceblue;
+$antiquewhite: antiquewhite;
+$aqua: aqua;
+$aquamarine: aquamarine;
+$azure: azure;
+$beige: beige;
+$bisque: bisque;
+$blanchedalmond: blanchedalmond;
+$black: black;
+$blue: blue;
+$blueviolet: blueviolet;
+$brown: brown;
+$burlywood: burlywood;
+$cadetblue: cadetblue;
+$chartreuse: chartreuse;
+$chocolate: chocolate;
+$coral: coral;
+$cornflowerblue: cornflowerblue;
+$cornsilk: cornsilk;
+$crimson: crimson;
+$cyan: cyan;
+$darkblue: darkblue;
+$darkcyan: darkcyan;
+$darkgoldenrod: darkgoldenrod;
+$darkgray: darkgray;
+$darkgreen: darkgreen;
+$darkkhaki: darkkhaki;
+$darkmagenta: darkmagenta;
+$darkolivegreen: darkolivegreen;
+$darkorange: darkorange;
+$darkorchid: darkorchid;
+$darkred: darkred;
+$darksalmon: darksalmon;
+$darkseagreen: darkseagreen;
+$darkslateblue: darkslateblue;
+$darkslategray: darkslategray;
+$darkturquoise: darkturquoise;
+$darkviolet: darkviolet;
+$deeppink: deeppink;
+$deepskyblue: deepskyblue;
+$dimgray: dimgray;
+$dodgerblue: dodgerblue;
+$firebrick: firebrick;
+$floralwhite: floralwhite;
+$forestgreen: forestgreen;
+$fuchsia: fuchsia;
+$gainsboro: gainsboro;
+$ghostwhite: ghostwhite;
+$gold: gold;
+$goldenrod: goldenrod;
+$gray: gray;
+$green: green;
+$greenyellow: greenyellow;
+$honeydew: honeydew;
+$hotpink: hotpink;
+$indianred: indianred;
+$indigo: indigo;
+$ivory: ivory;
+$khaki: khaki;
+$lavender: lavender;
+$lavenderblush: lavenderblush;
+$lawngreen: lawngreen;
+$lemonchiffon: lemonchiffon;
+$lightblue: lightblue;
+$lightcoral: lightcoral;
+$lightcyan: lightcyan;
+$lightgoldenrodyellow: lightgoldenrodyellow;
+$lightgray: lightgray;
+$lightgreen: lightgreen;
+$lightpink: lightpink;
+$lightsalmon: lightsalmon;
+$lightseagreen: lightseagreen;
+$lightskyblue: lightskyblue;
+$lightslategray: lightslategray;
+$lightsteelblue: lightsteelblue;
+$lightyellow: lightyellow;
+$lime: lime;
+$limegreen: limegreen;
+$linen: linen;
+$magenta: magenta;
+$maroon: maroon;
+$mediumaquamarine: mediumaquamarine;
+$mediumblue: mediumblue;
+$mediumorchid: mediumorchid;
+$mediumpurple: mediumpurple;
+$mediumseagreen: mediumseagreen;
+$mediumslateblue: mediumslateblue;
+$mediumspringgreen: mediumspringgreen;
+$mediumturquoise: mediumturquoise;
+$mediumvioletred: mediumvioletred;
+$midnightblue: midnightblue;
+$mintcream: mintcream;
+$mistyrose: mistyrose;
+$moccasin: moccasin;
+$navajowhite: navajowhite;
+$navy: navy;
+$oldlace: oldlace;
+$olive: olive;
+$olivedrab: olivedrab;
+$orange: orange;
+$orangered: orangered;
+$orchid: orchid;
+$palegoldenrod: palegoldenrod;
+$palegreen: palegreen;
+$paleturquoise: paleturquoise;
+$palevioletred: palevioletred;
+$papayawhip: papayawhip;
+$peachpuff: peachpuff;
+$peru: peru;
+$pink: pink;
+$plum: plum;
+$powderblue: powderblue;
+$purple: purple;
+$rebeccapurple: rebeccapurple;
+$red: red;
+$rosybrown: rosybrown;
+$royalblue: royalblue;
+$saddlebrown: saddlebrown;
+$salmon: salmon;
+$sandybrown: sandybrown;
+$seagreen: seagreen;
+$seashell: seashell;
+$sienna: sienna;
+$silver: silver;
+$skyblue: skyblue;
+$slateblue: slateblue;
+$slategray: slategray;
+$snow: snow;
+$springgreen: springgreen;
+$steelblue: steelblue;
+$tan: tan;
+$teal: teal;
+$thistle: thistle;
+$tomato: tomato;
+$turquoise: turquoise;
+$violet: violet;
+$wheat: wheat;
+$white: white;
+$whitesmoke: whitesmoke;
+$yellow: yellow;
+$yellowgreen: yellowgreen;

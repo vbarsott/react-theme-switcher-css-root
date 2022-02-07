@@ -1,0 +1,304 @@
+// =============================================
+// Variables to change:
+// =============================================
+
+// colors
+$black: #000000;
+$white: #ffffff;
+$dark: #696969;
+$light: #fffaf0;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+$error: #dc3545;
+$primary: #008080;
+$secondary: #dc3545;
+$tertiary: #696969;
+$accent: #ffc107;
+$strokeColor: #dcdcdc;
+$borderColor: #dcdcdc;
+$textColor: #696969;
+$themeBg: #008080;
+
+// breakpoints
+$bpXXS: 0;
+$bpXS: 420px;
+$bpSM: 576px;
+$bpMD: 768px;
+$bpLG: 992px;
+$bpXL: 1200px;
+$bpXXL: 1400px;
+
+// font-family
+$ffDef: 'Comfortaa', cursive;
+$ffStyled: 'Ranchers', cursive;
+$ffAccent: 'Licorice', cursive;
+
+// font-size
+$fsDef: 1rem;
+$fsXS: 0.9rem;
+$fsSM: 1rem;
+$fsMD: 1.1rem;
+$fsLG: 1.2rem;
+$fsXL: 1.4rem;
+$fsXXL: 2rem;
+
+// headings
+$fsH1: 2.2rem;
+$fsH2: 1.8rem;
+$fsH3: 1.6rem;
+$fsH4: 1.4rem;
+$fsH5: 1.2rem;
+$fsH6: 1.1rem;
+
+// font-size for media queries
+$fsH1sm: $fsH1 * 0.85;
+$fsH2sm: $fsH2 * 0.85;
+$fsH3sm: $fsH3 * 0.85;
+$fsH4sm: $fsH4 * 0.85;
+$fsH5sm: $fsH5 * 0.85;
+$fsH6sm: $fsH6 * 0.85;
+
+$fsH1lg: $fsH1 * 1.2;
+$fsH2lg: $fsH2 * 1.2;
+$fsH3lg: $fsH3 * 1.2;
+$fsH4lg: $fsH4 * 1.2;
+$fsH5lg: $fsH5 * 1.2;
+$fsH6lg: $fsH6 * 1.2;
+
+// font-weight
+$fwThin: 100;
+$fwExtralight: 200;
+$fwLight: 300;
+$fwNormal: 400;
+$fwMedium: 500;
+$fwSemibold: 600;
+$fwBold: 700;
+$fwExtrabold: 800;
+$fwHeavy: 900;
+
+// letter-spacing
+$lsDef: 1px;
+$lsSM: $lsDef;
+$lsMD: $lsDef * 2;
+$lsLG: $lsDef * 3;
+
+// line-height
+$lhDef: 1;
+$lh1: $lhDef * 1.1;
+$lh2: $lhDef * 1.2;
+$lh3: $lhDef * 1.3;
+$lh4: $lhDef * 1.4;
+$lh5: $lhDef * 1.5;
+
+// borders
+$bdDef: 1px solid $borderColor;
+
+// border-radius
+$brDef: 1px;
+$br1px: $brDef;
+$br2px: $brDef * 2;
+$br3px: $brDef * 3;
+$br4px: $brDef * 4;
+$br5px: $brDef * 5;
+$br10px: $brDef * 10;
+$br15px: $brDef * 15;
+$br20px: $brDef * 20;
+$br25px: $brDef * 25;
+$brRound: 50%;
+
+// box-shadow
+$bsDefault: 1px 3px 5px rgba(0, 0, 0, 0.1);
+
+// spacing
+$spacer: 0.5rem;
+$spacer0: 0;
+$spacer1: $spacer;
+$spacer2: $spacer * 2;
+$spacer3: $spacer * 3;
+$spacer4: $spacer * 4;
+$spacer5: $spacer * 5;
+$spacer6: $spacer * 6;
+$negSpacer1: neg($spacer) * 1;
+$negSpacer2: neg($spacer) * 2;
+$negSpacer3: neg($spacer) * 3;
+$negSpacer4: neg($spacer) * 4;
+$negSpacer5: neg($spacer) * 5;
+$negSpacer6: neg($spacer) * 6;
+
+// grid columns
+$gridColumns: 12;
+$gap: 0.5rem;
+$gapSM: $gap;
+$gapMD: $gap * 2;
+$gapLG: $gap * 3;
+$negGapSM: neg($gap) * 1;
+$negGapMD: neg($gap) * 2;
+$negGapLG: neg($gap) * 3;
+
+// buttons
+$btnPadSM: 0.5rem 1rem;
+$btnPadMD: 0.6rem 1.2rem;
+$btnPadLG: 0.6rem 1.4rem;
+$btnFsSM: 0.9rem;
+$btnFsMD: 1rem;
+$btnFsLG: 1.1rem;
+$btnMinWSM: 90px;
+$btnMinWMD: 100px;
+$btnMinWLG: 120px;
+$btnBr: 5px;
+$btnTransition: all 0.3s ease-out;
+
+// =============================================
+// CSS Root Theme Variables (DONT CHANGE):
+// =============================================
+[data-theme='teal'] {
+  // colors
+  --black: #{$black};
+  --white: #{$white};
+  --dark: #{$dark};
+  --light: #{$light};
+  --success: #{$success};
+  --info: #{$info};
+  --warning: #{$warning};
+  --danger: #{$danger};
+  --error: #{$error};
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --tertiary: #{$tertiary};
+  --accent: #{$accent};
+  --strokeColor: #{$strokeColor};
+  --borderColor: #{$borderColor};
+  --textColor: #{$textColor};
+  --themeBg: #{$themeBg};
+
+  // breakpoints
+  --bpXXS: #{$bpXXS};
+  --bpXS: #{$bpXS};
+  --bpSM: #{$bpSM};
+  --bpMD: #{$bpMD};
+  --bpLG: #{$bpLG};
+  --bpXL: #{$bpXL};
+  --bpXXL: #{$bpXXL};
+
+  // font-family
+  --ffDef: #{$ffDef};
+  --ffStyled: #{$ffStyled};
+  --ffAccent: #{$ffAccent};
+
+  // font-size
+  --fsDef: #{$fsDef};
+  --fsXS: #{$fsXS};
+  --fsSM: #{$fsSM};
+  --fsMD: #{$fsMD};
+  --fsLG: #{$fsLG};
+  --fsXL: #{$fsXL};
+  --fsXXL: #{$fsXXL};
+
+  // headings normal-size
+  --fsH1: #{$fsH1};
+  --fsH2: #{$fsH2};
+  --fsH3: #{$fsH3};
+  --fsH4: #{$fsH4};
+  --fsH5: #{$fsH5};
+  --fsH6: #{$fsH6};
+
+  // headings small-size
+  --fsH1sm: #{$fsH1sm};
+  --fsH2sm: #{$fsH2sm};
+  --fsH3sm: #{$fsH3sm};
+  --fsH4sm: #{$fsH4sm};
+  --fsH5sm: #{$fsH5sm};
+  --fsH6sm: #{$fsH6sm};
+
+  // headings big-size
+  --fsH1lg: #{$fsH1lg};
+  --fsH2lg: #{$fsH2lg};
+  --fsH3lg: #{$fsH3lg};
+  --fsH4lg: #{$fsH4lg};
+  --fsH5lg: #{$fsH5lg};
+  --fsH6lg: #{$fsH6lg};
+
+  // font-weight
+  --fwThin: #{$fwThin};
+  --fwExtralight: #{$fwExtralight};
+  --fwLight: #{$fwLight};
+  --fwNormal: #{$fwNormal};
+  --fwMedium: #{$fwMedium};
+  --fwSemibold: #{$fwSemibold};
+  --fwBold: #{$fwBold};
+  --fwExtrabold: #{$fwExtrabold};
+  --fwHeavy: #{$fwHeavy};
+
+  // letter-spacing
+  --lsDef: #{$lsDef};
+  --lsSM: #{$lsSM};
+  --lsMD: #{$lsMD};
+  --lsLG: #{$lsLG};
+
+  // line-height
+  --lhDef: #{$lhDef};
+  --lh1: #{$lh1};
+  --lh2: #{$lh2};
+  --lh3: #{$lh3};
+  --lh4: #{$lh4};
+  --lh5: #{$lh5};
+
+  // borders
+  --bdDef: #{$bdDef};
+
+  // border-radius
+  --brDef: #{$brDef};
+  --br1px: #{$br1px};
+  --br2px: #{$br2px};
+  --br3px: #{$br3px};
+  --br4px: #{$br4px};
+  --br5px: #{$br5px};
+  --br10px: #{$br10px};
+  --br15px: #{$br15px};
+  --br20px: #{$br20px};
+  --br25px: #{$br25px};
+  --brRound: #{$brRound};
+
+  // box-shadow
+  --bsDefault: #{$bsDefault};
+
+  // spacing
+  --spacer: #{$spacer};
+  --spacer0: #{$spacer0};
+  --spacer1: #{$spacer1};
+  --spacer2: #{$spacer2};
+  --spacer3: #{$spacer3};
+  --spacer4: #{$spacer4};
+  --spacer5: #{$spacer5};
+  --spacer6: #{$spacer6};
+  --negSpacer1: #{$negSpacer1};
+  --negSpacer2: #{$negSpacer2};
+  --negSpacer3: #{$negSpacer3};
+  --negSpacer4: #{$negSpacer4};
+  --negSpacer5: #{$negSpacer5};
+  --negSpacer6: #{$negSpacer6};
+
+  // grid
+  --gridColumns: #{$gridColumns};
+  --gapSM: #{$gapSM};
+  --gapMD: #{$gapMD};
+  --gapLG: #{$gapLG};
+  --negGapSM: #{$negGapSM};
+  --negGapMD: #{$negGapMD};
+  --negGapLG: #{$negGapLG};
+
+  // buttons
+  --btnPadSM: #{$btnPadSM};
+  --btnPadMD: #{$btnPadMD};
+  --btnPadLG: #{$btnPadLG};
+  --btnFsSM: #{$btnFsSM};
+  --btnFsMD: #{$btnFsMD};
+  --btnFsLG: #{$btnFsLG};
+  --btnMinWSM: #{$btnMinWSM};
+  --btnMinWMD: #{$btnMinWMD};
+  --btnMinWLG: #{$btnMinWLG};
+  --btnBr: #{$btnBr};
+  --btnTransition: #{$btnTransition};
+}

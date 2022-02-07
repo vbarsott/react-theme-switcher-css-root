@@ -1,0 +1,48 @@
+// =============================================
+/* Borders */
+// =============================================
+.border {
+  border: var(--bdDef);
+}
+.bdTop {
+  border-top: var(--bdDef);
+}
+.bdBottom {
+  border-bottom: var(--bdDef);
+}
+.bdLeft {
+  border-left: var(--bdDef);
+}
+.bdRight {
+  border-right: var(--bdDef);
+}
+.borderX {
+  border-left: var(--bdDef);
+  border-right: var(--bdDef);
+}
+.borderY {
+  border-top: var(--bdDef);
+  border-bottom: var(--bdDef);
+}
+
+// =============================================
+/* Border-radius */
+// =============================================
+$theme-br: (
+  'brDef': var(--brDef),
+  'br1px': var(--br1px),
+  'br2px': var(--br2px),
+  'br3px': var(--br3px),
+  'br4px': var(--br4px),
+  'br5px': var(--br5px),
+  'br10px': var(--br10px),
+  'br15px': var(--br15px),
+  'br20px': var(--br20px),
+  'br25px': var(--br25px),
+  'brRound': var(--brRound),
+);
+@each $key, $value in $theme-br {
+  .#{$key} {
+    border-radius: $value;
+  }
+}

@@ -1,0 +1,281 @@
+// =============================================
+/* Sizing */
+// =============================================
+$theme-sizing: (
+  'width': (
+    'prefix': 'v',
+    'values': (
+      'vw5': 5vw,
+      'vw10': 10vw,
+      'vw15': 15vw,
+      'vw20': 20vw,
+      'vw25': 25vw,
+      'vw30': 30vw,
+      'vw35': 35vw,
+      'vw40': 40vw,
+      'vw45': 45vw,
+      'vw50': 50vw,
+      'vw55': 55vw,
+      'vw60': 60vw,
+      'vw65': 65vw,
+      'vw70': 70vw,
+      'vw75': 75vw,
+      'vw80': 80vw,
+      'vw85': 85vw,
+      'vw90': 90vw,
+      'vw95': 95vw,
+      'vw100': 100vw,
+      'w5': 5%,
+      'w10': 10%,
+      'w15': 15%,
+      'w20': 20%,
+      'w25': 25%,
+      'w30': 30%,
+      'w35': 35%,
+      'w40': 40%,
+      'w45': 45%,
+      'w50': 50%,
+      'w55': 55%,
+      'w60': 60%,
+      'w65': 65%,
+      'w70': 70%,
+      'w75': 75%,
+      'w80': 80%,
+      'w85': 85%,
+      'w90': 90%,
+      'w95': 95%,
+      'w100': 100%,
+    ),
+  ),
+  'height': (
+    'prefix': 'h',
+    'values': (
+      'vh5': 5vh,
+      'vh10': 10vh,
+      'vh15': 15vh,
+      'vh20': 20vh,
+      'vh25': 25vh,
+      'vh30': 30vh,
+      'vh35': 35vh,
+      'vh40': 40vh,
+      'vh45': 45vh,
+      'vh50': 50vh,
+      'vh55': 55vh,
+      'vh60': 60vh,
+      'vh65': 65vh,
+      'vh70': 70vh,
+      'vh75': 75vh,
+      'vh80': 80vh,
+      'vh85': 85vh,
+      'vh90': 90vh,
+      'vh95': 95vh,
+      'vh100': 100vh,
+      'h5': 5%,
+      'h10': 10%,
+      'h15': 15%,
+      'h20': 20%,
+      'h25': 25%,
+      'h30': 30%,
+      'h35': 35%,
+      'h40': 40%,
+      'h45': 45%,
+      'h50': 50%,
+      'h55': 55%,
+      'h60': 60%,
+      'h65': 65%,
+      'h70': 70%,
+      'h75': 75%,
+      'h80': 80%,
+      'h85': 85%,
+      'h90': 90%,
+      'h95': 95%,
+      'h100': 100%,
+    ),
+  ),
+);
+@each $key, $value in $theme-sizing {
+  $prefix: map-get($value, 'prefix');
+  $values: map-get($value, 'values');
+  @each $k, $v in $values {
+    .#{$k} {
+      #{$key}: $v;
+    }
+    @if ($prefix == 'v') {
+      .#{$k}Max {
+        max-width: $v;
+      }
+      .#{$k}Min {
+        min-width: $v;
+      }
+    }
+    @if ($prefix == 'h') {
+      .#{$k}Max {
+        max-height: $v;
+      }
+      .#{$k}Min {
+        min-height: $v;
+      }
+    }
+  }
+  @include xxs {
+    @each $k, $v in $values {
+      .#{$k}-xxs {
+        #{$key}: $v;
+      }
+      @if ($prefix == 'v') {
+        .#{$k}Max-xxs {
+          max-width: $v;
+        }
+        .#{$k}Min-xxs {
+          min-width: $v;
+        }
+      }
+      @if ($prefix == 'h') {
+        .#{$k}Max-xxs {
+          max-height: $v;
+        }
+        .#{$k}Min-xxs {
+          min-height: $v;
+        }
+      }
+    }
+  }
+  @include xs {
+    @each $k, $v in $values {
+      .#{$k}-xs {
+        #{$key}: $v;
+      }
+      @if ($prefix == 'v') {
+        .#{$k}Max-xs {
+          max-width: $v;
+        }
+        .#{$k}Min-xs {
+          min-width: $v;
+        }
+      }
+      @if ($prefix == 'h') {
+        .#{$k}Max-xs {
+          max-height: $v;
+        }
+        .#{$k}Min-xs {
+          min-height: $v;
+        }
+      }
+    }
+  }
+  @include sm {
+    @each $k, $v in $values {
+      .#{$k}-sm {
+        #{$key}: $v;
+      }
+      @if ($prefix == 'v') {
+        .#{$k}Max-sm {
+          max-width: $v;
+        }
+        .#{$k}Min-sm {
+          min-width: $v;
+        }
+      }
+      @if ($prefix == 'h') {
+        .#{$k}Max-sm {
+          max-height: $v;
+        }
+        .#{$k}Min-sm {
+          min-height: $v;
+        }
+      }
+    }
+  }
+  @include md {
+    @each $k, $v in $values {
+      .#{$k}-md {
+        #{$key}: $v;
+      }
+      @if ($prefix == 'v') {
+        .#{$k}Max-md {
+          max-width: $v;
+        }
+        .#{$k}Min-md {
+          min-width: $v;
+        }
+      }
+      @if ($prefix == 'h') {
+        .#{$k}Max-md {
+          max-height: $v;
+        }
+        .#{$k}Min-md {
+          min-height: $v;
+        }
+      }
+    }
+  }
+  @include lg {
+    @each $k, $v in $values {
+      .#{$k}-lg {
+        #{$key}: $v;
+      }
+      @if ($prefix == 'v') {
+        .#{$k}Max-lg {
+          max-width: $v;
+        }
+        .#{$k}Min-lg {
+          min-width: $v;
+        }
+      }
+      @if ($prefix == 'h') {
+        .#{$k}Max-lg {
+          max-height: $v;
+        }
+        .#{$k}Min-lg {
+          min-height: $v;
+        }
+      }
+    }
+  }
+  @include xl {
+    @each $k, $v in $values {
+      .#{$k}-xl {
+        #{$key}: $v;
+      }
+      @if ($prefix == 'v') {
+        .#{$k}Max-xl {
+          max-width: $v;
+        }
+        .#{$k}Min-xl {
+          min-width: $v;
+        }
+      }
+      @if ($prefix == 'h') {
+        .#{$k}Max-xl {
+          max-height: $v;
+        }
+        .#{$k}Min-xl {
+          min-height: $v;
+        }
+      }
+    }
+  }
+  @include xxl {
+    @each $k, $v in $values {
+      .#{$k}-xxl {
+        #{$key}: $v;
+      }
+      @if ($prefix == 'v') {
+        .max-#{$k}-xxl {
+          max-width: $v;
+        }
+        .min-#{$k}-xxl {
+          min-width: $v;
+        }
+      }
+      @if ($prefix == 'h') {
+        .max-#{$k}-xxl {
+          max-height: $v;
+        }
+        .min-#{$k}-xxl {
+          min-height: $v;
+        }
+      }
+    }
+  }
+}

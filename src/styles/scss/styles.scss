@@ -1,0 +1,263 @@
+@use 'sass:math';
+
+// =============================================
+// Imports (DONT CHANGE THE ORDER):
+// =============================================
+// Functions
+@import './components/functions';
+@import './components/accessories/fonts-options';
+
+// Themes variables
+@import './themes/blue/blue';
+@import './themes/orange/orange';
+@import './themes/teal/teal';
+
+// Styling components
+@import './components/colors';
+@import './components/breakpoints';
+@import './components/typography';
+@import './components/reset';
+@import './components/borders';
+@import './components/spacing';
+@import './components/sizing';
+@import './components/display';
+@import './components/grid';
+@import './components/buttons';
+@import './components/cards';
+@import './components/badges';
+@import './components/utilities';
+
+// Themes custom-classes
+@import './themes/blue/custom-classes';
+@import './themes/orange/custom-classes';
+@import './themes/teal/custom-classes';
+
+// To develop:
+// TEXT STROKE
+// BOX SHADOW
+// CUSTOM BORDERS
+// CUSTOM BUTTONS
+
+// =============================================
+// Abbreviations:
+// =============================================
+// bd = border
+// bg = background
+// br = border-radius
+// bs = box-shadow
+// d = display
+// def = default
+// ff = font-family
+// fs = font-size
+// fw = font-weight
+// h = heigth
+// lh = line-heigth
+// ls = letter-spacing
+// m = margin
+// mb = margin-bottom
+// ml = margin-left
+// mr = margin-right
+// mt = margin-top
+// op = opacity
+// p = padding
+// pb = padding-bottom
+// pl = padding-left
+// pr = padding-right
+// pt = padding-top
+// vh = view heigth
+// vw = view width
+// w = width
+
+// Classes
+// .ffDef
+// .ffStyled
+// .ffAccent
+// .fsDef
+// .fsXS
+// .fsSM
+// .fsMD
+// .fsLG
+// .fsXL
+// .fsH1
+// .fsH2
+// .fsH3
+// .fsH4
+// .fsH5
+// .fsH6
+// .fwThin
+// .fwExtralight
+// .fwLight
+// .fwNormal
+// .fwMedium
+// .fwSemibold
+// .fwBold
+// .fwExtrabold
+// .fwHeavy
+// .lsSM
+// .lsMD
+// .lsLG
+
+// .mAuto
+// .p0 to .p6, .p0-xxs to .p6-xxl
+
+// .textCenter, .textCenter-xxs to .textCenter-xxl
+// .textLeft, .textLeft-xxs to .textLeft-xxl
+// .textRight, .textRight-xxs to .textRight-xxl
+
+// .px0 to .px6, .px0-xxs to .px6-xxl
+// .py0 to .py6, .py0-xxs to .py6-xxl
+// .pl0 to .pl6, .pl0-xxs to .pl6-xxl
+// .pr0 to .pr6, .pr0-xxs to .pr6-xxl
+// .pt0 to .pt6, .pt0-xxs to .pt6-xxl
+// .pb0 to .pb6, .pb0-xxs to .pb6-xxl
+// .m0 to .m6, .m0-xxs to .m6-xxl
+// .mx0 to .mx6, .mx0-xxs to .mx6-xxl
+// .my0 to .my6, .my0-xxs to .my6-xxl
+// .ml0 to .ml6, .ml0-xxs to .ml6-xxl
+// .mr0 to .mr6, .mr0-xxs to .mr6-xxl
+// .mt0 to .mt6, .mt0-xxs to .mt6-xxl
+// .mb0 to .mb6, .mb0-xxs to .mb6-xxl
+// .mlN1 to .mlN6, .mlN1-xxs to .mlN6-xxl
+// .mrN1 to .mrN6, .mrN1-xxs to .mrN6-xxl
+// .mtN1 to .mtN6, .mtN1-xxs to .mtN6-xxl
+// .mbN1 to .mbN6, .mbN1-xxs to .mbN6-xxl
+// .vw5 to .vw100, .vw5-xxs to .vw100-xxl
+// .vw5Max to vw100Max, .vw5Max-xxs to vw100Max-xxl
+// .vw5Min to .vw100Min, .vw5Min-xxs to .vw100Min-xxl
+// .w5 to .w100, .w5-xxs to .w100-xxl
+// .w5Max to w100Max, .w5Max-xxs to w100Max-xxl
+// .w5Min to .w100Min, .w5Min-xxs to .w100Min-xxl
+// .vh5 to .vh100, .vh5-xxs to .vh100-xxl
+// .vh5Max to vh100Max, .vh5Max-xxs to vh100Max-xxl
+// .vh5Min to .vhMin-100, .vh5Min-xxs to .vh100Min-xxl
+// .h5 to .h100, .h5-xxs to .h100-xxl
+// .h5Max to h100Max, .h5Max-xxs to h100Max-xxl
+// .h5Min to .h100Min, .h5Min-xxs to .h100Min-xxl
+// .col1 to .col12
+// .col1-xxs to .col12-xxs
+// .col1-xs to .col12-xs
+// .col1-sm to .col12-sm
+// .col1-md to .col12-md
+// .col1-lg to .col12-lg
+// .col1-xl to .col12-xl
+// .col1-xxl to .col12-xxl
+// .row
+// .containerFluidSM, .containerFluidSM-sm, .containerFluidSM-md, .containerFluidSM-lg
+// .containerFluidMD, .containerFluidMD-sm, .containerFluidMD-md, .containerFluid2-lg
+// .containerFluidLG, .containerFluidLG-sm, .containerFluidLG-md, .containerFluidLG-lg
+// .containerSM, .containerSM-sm, .containerSM-md, .containerSM-lg
+// .containerMD, .containerMD-sm, .containerMD-md, .containerMD-lg
+// .containerLG, .containerLG-sm, .containerLG-md, .containerLG-lg
+// .gapSM, .gapSM-sm, .gapSM-md, .gapSM-lg
+// .gapMD, .gapMD-sm, .gapMD-md, .gapMD-lg
+// .gapLG, .gapLG-sm, .gapLG-md, .gapLG-lg
+// .displayNone, .displayNone-xxs to .displayNone-xxl
+// .displayInline, .displayInline-xxs to .displayInline-xxl
+// .displayInlineBlock, .displayInlineBlock-xxs to .displayInlineBlock-xxl
+// .displayBlock, .displayBlock-xxs to .displayBlock-xxl
+// .displayGrid, .displayGrid-xxs to .displayGrid-xxl
+// .displayFlex, .displayFlex-xxs to .displayFlex-xxl
+// .displayInlineFlex, .displayInlineFlex-xxs to .displayInlineFlex-xxl
+// .flexRow, .flexRow-xxs to .flexRow-xxl
+// .flexRowReverse, .flexRowReverse-xxs to .flexRowReverse-xxl
+// .flexColumn, .flexColumn-xxs to .flexColumn-xxl
+// .flexColumnReverse, .flexColumnReverse-xxs to .flexColumnReverse-xxl
+// .justifyCenter, .justifyCenter-xxs to .justifyCenter-xxl
+// .justifyStart, .justifyStart-xxs to .justifyStart-xxl
+// .justifyEnd, .justifyEnd-xxs to .justifyEnd-xxl
+// .justifyBetween, .justifyBetween-xxs to .justifyBetween-xxl
+// .justifyAround, .justifyAround-xxs to .justifyAround-xxl
+// .justifyEvenly, .justifyEvenly-xxs to .justifyEvenly-xxl
+// .alignStart, .alignStart-xxs to .alignStart-xxl
+// .alignEnd, .alignEnd-xxs to .alignEnd-xxl
+// .alignCenter, .alignCenter-xxs to .alignCenter-xxl
+// .alignBaseline, .alignBaseline-xxs to .alignBaseline-xxl
+// .alignStretch, .alignStretch-xxs to .alignStretch-xxl
+// .alignContentCenter, .alignContentCenter-xxs to .alignContentCenter-xxl
+// .alignContentStart, .alignContentStart-xxs to .alignContentStart-xxl
+// .alignContentEnd, .alignContentEnd-xxs to .alignContentEnd-xxl
+// .alignContentBetween, .alignContentBetween-xxs to .alignContentBetween-xxl
+// .alignContentAround, .alignContentAround-xxs to .alignContentAround-xxl
+// .alignContentStretch, .alignContentStretch-xxs to .alignContentStretch-xxl
+// .alignSelfAuto, .alignSelfAuto-xxs to .alignSelfAuto-xxl
+// .alignSelfStart, .alignSelfStart-xxs to .alignSelfStart-xxl
+// .alignSelfEnd, .alignSelfEnd-xxs to .alignSelfEnd-xxl
+// .alignSelfCenter, .alignSelfCenter-xxs to .alignSelfCenter-xxl
+// .alignSelfBaseline, .alignSelfBaseline-xxs to .alignSelfBaseline-xxl
+// .alignSelfStretch, .alignSelfStretch-xxs to .alignSelfStretch-xxl
+// .orderFirst, .orderFirst-xxs to .orderFirst-xxl
+// .order0, .order0-xxs to .order0-xxl
+// .order1, .order1-xxs to .order1-xxl
+// .order2, .order2-xxs to .order2-xxl
+// .order3, .order3-xxs to .order3-xxl
+// .order4, .order4-xxs to .order4-xxl
+// .order5, .order5-xxs to .order5-xxl
+// .orderLast, .orderLast-xxs to .orderLast-xxl
+// .black
+// .bgBlack
+// .white
+// .bgWhite
+// .dark
+// .bgDark
+// .light
+// .bgLight
+// .success
+// .bgSuccess
+// .info
+// .bgInfo
+// .warning
+// .bgWarning
+// .danger
+// .bgDanger
+// .error
+// .bgError
+// .primary
+// .bgPrimary
+// .secondary
+// .bgSecondary
+// .tertiary
+// .bg-tertiary
+// .accent
+// .bgAccent
+// .strokeColor
+// .borderColor
+// .textColor
+// .themeBg
+// .card
+// .cardTitle
+// .cardBody
+// .btn
+// .btnSM, .btnMD, .btnLG
+// .btnWhite
+// .btnBlack
+// .btnLight
+// .btnDark
+// .btnPrimary
+// .btnPrimary-outlined
+// .btnSecondary
+// .btnSecondary-outlined
+// .btnTertiary
+// .btnTertiary-outlined
+// .btnAccent
+// .btnAccent-outlined
+// .brDef
+// .br1px
+// .br2px
+// .br3px
+// .br4px
+// .br5px
+// .br10px
+// .br15px
+// .br20px
+// .br25px
+// .brRound
+// .border
+// .bdTop
+// .bdBottom
+// .bdLeft
+// .bdRight
+// .borderX
+// .borderY
+// .badge
+
+// .op0 to .op100

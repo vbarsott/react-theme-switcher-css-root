@@ -1,0 +1,93 @@
+// =============================================
+/* Colors */
+// =============================================
+.black {
+  color: var(--black);
+}
+.bgBlack {
+  background-color: var(--black);
+}
+.white {
+  color: var(--white);
+}
+.bgWhite {
+  background-color: var(--white);
+}
+.dark {
+  color: var(--dark);
+}
+.bgDark {
+  background-color: var(--dark);
+}
+.light {
+  color: var(--light);
+}
+.bgLight {
+  background-color: var(--light);
+}
+.success {
+  color: var(--success);
+}
+.bgSuccess {
+  background-color: var(--success);
+}
+.info {
+  color: var(--info);
+}
+.bgInfo {
+  background-color: var(--info);
+}
+.warning {
+  color: var(--warning);
+}
+.bgWarning {
+  background-color: var(--warning);
+}
+.danger {
+  color: var(--danger);
+}
+.bgDanger {
+  background-color: var(--danger);
+}
+.error {
+  color: var(--error);
+}
+.bgError {
+  background-color: var(--error);
+}
+.primary {
+  color: var(--primary);
+}
+.bgPrimary {
+  background-color: var(--primary);
+}
+.secondary {
+  color: var(--secondary);
+}
+.bgSecondary {
+  background-color: var(--secondary);
+}
+.tertiary {
+  color: var(--tertiary);
+}
+.bgTertiary {
+  background-color: var(--tertiary);
+}
+.accent {
+  color: var(--accent);
+}
+.bgAccent {
+  background-color: var(--accent);
+}
+.strokeColor {
+  color: var(--strokeColor);
+}
+.borderColor {
+  color: var(--borderColor);
+}
+.textColor {
+  color: var(--textColor);
+}
+.themeBg {
+  background-color: var(--themeBg);
+}

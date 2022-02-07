@@ -1,0 +1,13 @@
+// =============================================
+/* Badges */
+// =============================================
+@mixin badge() {
+  border-radius: var(--bdRound);
+  padding: var(--spacer2);
+  font-size: 1.2rem;
+  font-weight: var(--fwSemibold);
+  text-align: center;
+}
+.badge {
+  @include badge;
+}
