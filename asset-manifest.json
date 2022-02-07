@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-theme-switcher-css-root/static/css/main.a08911e3.css",
+    "main.js": "/react-theme-switcher-css-root/static/js/main.45bd096c.js",
+    "index.html": "/react-theme-switcher-css-root/index.html",
+    "main.a08911e3.css.map": "/react-theme-switcher-css-root/static/css/main.a08911e3.css.map",
+    "main.45bd096c.js.map": "/react-theme-switcher-css-root/static/js/main.45bd096c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a08911e3.css",
+    "static/js/main.45bd096c.js"
+  ]
+}
